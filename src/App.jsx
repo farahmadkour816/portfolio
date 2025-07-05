@@ -10,9 +10,9 @@ const App = () => {
         v7_relativeSplatPath: true,
       }}
     >
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
+      <div className="min-h-screen flex flex-col bg-primary">
+      <div className="flex-grow">
+     <Navbar />
           <Hero />
         </div>
         <About />
