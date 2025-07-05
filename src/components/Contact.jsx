@@ -102,6 +102,9 @@ const Contact = () => {
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact Me</h3>
+        <p className={styles.sectionSubText}>Email me directly at: FarahMadkour816@gmail.com</p>
+        <p className={styles.sectionSubText}>Or contact me through the form!</p>
+
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <InputField
@@ -141,6 +144,30 @@ const Contact = () => {
           </button>
           {confirmation && <p className="text-green-500">{confirmation}</p>}
         </form>
+ <div className="mt-10 bg-[#1a1a2e] p-6 rounded-xl text-center shadow-lg border border-[#333]">
+  <h4 className="text-white text-[20px] font-semibold mb-3">📬 Prefer to connect directly?</h4>
+
+  <p className="text-gray-300 text-[16px] mb-4">
+    You can also reach me by phone or connect with me on LinkedIn!
+  </p>
+
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+    <div className="bg-black-200 text-white px-6 py-3 rounded-lg text-[15px] shadow-sm border border-gray-600">
+      📞 +1 (437) 261-8455 {/* Replace with your real number */}
+    </div>
+
+    <a
+      href="https://www.linkedin.com/in/farah-madkour-441049257/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-200 shadow-md"
+    >
+      Connect on LinkedIn
+    </a>
+  </div>
+</div>
+
+
       </motion.div>
 
       <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">

@@ -69,6 +69,71 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} {...project} />
         ))}
       </div>
+      <motion.div
+  variants={fadeIn("", "", 0.2)}
+  className="mt-20 bg-gradient-to-br from-[#1a1a2e] to-[#2c2c44] p-8 rounded-2xl max-w-5xl mx-auto shadow-lg border border-[#3a3a5c]"
+>
+  <h3 className="text-pink-400 text-[20px] font-semibold text-center mb-2 uppercase tracking-widest">
+    Purpose-Driven Engineering
+  </h3>
+  <h2 className="text-white text-[28px] md:text-[32px] font-extrabold text-center mb-4 leading-snug">
+    Engineering for Impact: <br className="hidden sm:block" />
+    Advancing Healthcare Through Innovation
+  </h2>
+  <p className="text-[16px] md:text-[17px] text-gray-300 leading-[30px] text-center max-w-3xl mx-auto">
+    My vision as an engineer is to advance healthcare through Big Data and AI-driven insights.
+    I aspire to design scalable database systems that allow real-time medical data analysis,
+    enabling earlier diagnoses, personalized treatments, and optimized patient care.
+    By integrating intelligent systems into healthcare infrastructure, I aim to drive impactful,
+    data-informed solutions that improve lives and foster innovation in the medical field.
+  </p>
+</motion.div>
+
+      {/* 🧩 Personal Section: Hobbies & Languages */}
+<motion.div
+  variants={fadeIn("", "", 0.2)}
+  className="mt-20 bg-[#1a1a2e] p-8 rounded-2xl max-w-5xl mx-auto"
+>
+  <h3 className="text-orange-400 text-[20px] font-semibold text-center mb-2">About Me</h3>
+  <h2 className="text-white text-[32px] font-bold text-center mb-8">Hobbies & Languages</h2>
+
+  <div className="space-y-6">
+    {[
+      {
+        title: 'Taekwondo - Black Belt',
+        content:
+          'Beyond my passion for engineering, I am a Kukkiwon-certified Taekwondo black belt, showcasing my dedication, discipline, and resilience. These qualities permeate all areas of my academic and professional life, empowering me to overcome challenges and pursue excellence.',
+      },
+      {
+        title: 'Piano - RCM Level 2',
+        content:
+          'I’m proud to hold a Royal Conservatory of Music (RCM) Level 2 certification in piano, showcasing my commitment to musical proficiency and mastering complex skills. This highlights my passion for music and my ability to adapt, learn, and excel across diverse disciplines.',
+      },
+      {
+        title: 'Arabic - Fluent',
+        content:
+          'Arabic is my native tongue, and I’m fluent in both speaking and writing. I’ve passed official government exams in Arabic, showing strong formal proficiency and enabling inclusive communication with diverse communities.',
+      },
+      {
+        title: 'English - Fluent',
+        content:
+          'I’ve mastered English academically and practically, scoring 9 on the IELTS and excelling in the SATs (96th percentile). I also completed all IGCSE courses in English, equipping me to communicate professionally and personally in global contexts.',
+      },
+      {
+        title: 'French - Fluent',
+        content:
+          'I’ve studied French for over nine years, culminating in the DELF exam. My strong command of French allows me to confidently engage in conversation and comprehend academic and professional materials.',
+      },
+    ].map(({ title, content }) => (
+      <div key={title} className="border border-white rounded-lg p-5 text-white">
+        <h4 className="text-[18px] font-semibold mb-2">{title}</h4>
+        <p className="text-[15px] text-gray-300 leading-7">{content}</p>
+      </div>
+    ))}
+  </div>
+</motion.div>
+
+
     </>
   );
 };
